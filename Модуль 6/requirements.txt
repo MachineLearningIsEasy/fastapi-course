@@ -1,0 +1,6 @@
+pyjwt
+sqlalchemy
+deta
+passlib
+bcrypt
+psycopg2

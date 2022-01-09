@@ -1,0 +1,18 @@
+version: '3'
+services:
+  wed:
+    build: .
+    container_name: phonebook
+    external_links:
+      - db-pg:db-pg
+    volumes:
+      - ./app:/app
+    ports:
+      - "80:80"
+  database:
+    image: "postgres"
+    container_name: db-pg
+    env_file:
+      - database.env
+    ports:
+      - "5432:5432"
