@@ -27,7 +27,7 @@ def get_db():
 security = HTTPBearer()
 auth_handler = Auth()
 
-deta = Deta('c049ac2i_h8qbgw1xcZBK9iUHKnXg8eTAWnwGyMtq')
+deta = Deta('your deta key')
 users_db = deta.Base('users')
 
 
